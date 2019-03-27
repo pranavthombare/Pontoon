@@ -94,7 +94,7 @@ int main(void){
 
 			else if (game.whoWin(player, dealer) == 3) {
 			game.gameSummary(player, dealer);
-			cout << endl << "BlackJack!" << endl << "You win " << endl;
+			cout << endl << "Pontoon!" << endl << "You win " << endl;
 			won++;
 			cout << endl << "#NEW GAME#" << endl;
 			game.newDeal(deck, player, dealer, cardCounter);

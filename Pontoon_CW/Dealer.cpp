@@ -16,7 +16,6 @@ void Dealer::showOne()
 void Dealer::show()
 {	
 	getHand();
-	cout << endl << "### -- ###" << endl;
 }
 
 

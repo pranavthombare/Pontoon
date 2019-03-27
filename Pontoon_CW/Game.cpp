@@ -66,7 +66,7 @@ bool Game::winner(Player &player, Dealer &dealer)
 	}	
 	else if (player.getHandValue() == 21){
 		gameSummary(player, dealer);
-		cout << endl << "BlackJack!" << endl << "You win " << endl << endl << "#NEW GAME#" << endl;
+		cout << endl << "Pontoon!" << endl << "You win " << endl << endl << "#NEW GAME#" << endl;
 		return true;
 	}
 	else if (dealer.getHandValue() > 21){
@@ -85,7 +85,7 @@ bool Game::winInFirst(Player &player, Dealer &dealer)
 	}
 	else if (player.getHandValue() == 21){
 		gameSummary(player, dealer);
-		cout << endl << "BlackJack!" << endl << "You win "  << endl << endl << "#NEW GAME#" << endl;
+		cout << endl << "Pontoon!" << endl << "You win "  << endl << endl << "#NEW GAME#" << endl;
 		return true;
 	}
 	else if (dealer.getHandValue() > 21){

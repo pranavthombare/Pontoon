@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		EF2ABF87224A92DE00DE297B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF2ABF86224A92DE00DE297B /* main.cpp */; };
+		EF2ABF9F224AD3FA00DE297B /* Card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF2ABF9D224AD3FA00DE297B /* Card.cpp */; };
+		EF2ABFA2224AD46700DE297B /* Deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF2ABFA0224AD46700DE297B /* Deck.cpp */; };
+		EF2ABFA5224AD4E900DE297B /* Hand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF2ABFA3224AD4E900DE297B /* Hand.cpp */; };
+		EF2ABFA8224AD56400DE297B /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF2ABFA6224AD56400DE297B /* Player.cpp */; };
+		EF2ABFAB224AD60900DE297B /* Dealer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EF2ABFA9224AD60900DE297B /* Dealer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		EF2ABF83224A92DE00DE297B /* Pontoon_CW */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pontoon_CW; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2ABF86224A92DE00DE297B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EF2ABF9D224AD3FA00DE297B /* Card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Card.cpp; sourceTree = "<group>"; };
+		EF2ABF9E224AD3FA00DE297B /* Card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Card.hpp; sourceTree = "<group>"; };
+		EF2ABFA0224AD46700DE297B /* Deck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Deck.cpp; sourceTree = "<group>"; };
+		EF2ABFA1224AD46700DE297B /* Deck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deck.hpp; sourceTree = "<group>"; };
+		EF2ABFA3224AD4E900DE297B /* Hand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Hand.cpp; sourceTree = "<group>"; };
+		EF2ABFA4224AD4E900DE297B /* Hand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hand.hpp; sourceTree = "<group>"; };
+		EF2ABFA6224AD56400DE297B /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		EF2ABFA7224AD56400DE297B /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		EF2ABFA9224AD60900DE297B /* Dealer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dealer.cpp; sourceTree = "<group>"; };
+		EF2ABFAA224AD60900DE297B /* Dealer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dealer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				EF2ABF86224A92DE00DE297B /* main.cpp */,
+				EF2ABFA0224AD46700DE297B /* Deck.cpp */,
+				EF2ABFA1224AD46700DE297B /* Deck.hpp */,
+				EF2ABFA6224AD56400DE297B /* Player.cpp */,
+				EF2ABFA9224AD60900DE297B /* Dealer.cpp */,
+				EF2ABFAA224AD60900DE297B /* Dealer.hpp */,
+				EF2ABFA7224AD56400DE297B /* Player.hpp */,
+				EF2ABFA3224AD4E900DE297B /* Hand.cpp */,
+				EF2ABFA4224AD4E900DE297B /* Hand.hpp */,
+				EF2ABF9D224AD3FA00DE297B /* Card.cpp */,
+				EF2ABF9E224AD3FA00DE297B /* Card.hpp */,
 			);
 			path = Pontoon_CW;
 			sourceTree = "<group>";
@@ -118,7 +143,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2ABFAB224AD60900DE297B /* Dealer.cpp in Sources */,
+				EF2ABFA5224AD4E900DE297B /* Hand.cpp in Sources */,
+				EF2ABFA2224AD46700DE297B /* Deck.cpp in Sources */,
 				EF2ABF87224A92DE00DE297B /* main.cpp in Sources */,
+				EF2ABF9F224AD3FA00DE297B /* Card.cpp in Sources */,
+				EF2ABFA8224AD56400DE297B /* Player.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

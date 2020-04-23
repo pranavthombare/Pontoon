@@ -23,20 +23,20 @@ int main(void){
 	int deal = 0;
 	int won=0,lost=0;
 	ofstream file;
-    auto game_begin = chrono::system_clock::to_time_t(chrono::system_clock::now()); 
+    auto game_begin = chrono::system_clock::to_time_t(chrono::system_clock::now());
 
 
 	cout << "What is your name?: ";
-	cin >> playerName;	
+	cin >> playerName;
 	Player player(playerName);
 	Dealer dealer;
 
 	deck->shuffle();
 
 	game.newDeal(deck, player, dealer, cardCounter);
-	
+
 	bool ans=true;
-	while(ans){		
+	while(ans){
 		cout << endl << "Twist (1)" << endl << "Stick (2)" << endl << "Exit (3)"<< endl;
 		do{
 			cin >> choice;
@@ -64,7 +64,7 @@ int main(void){
 			game.newDeal(deck, player, dealer, cardCounter);
 			deal++;
 			}
-			
+
 		}break;
 
 	case 2:{
@@ -103,19 +103,15 @@ int main(void){
 
 		}break;
 
-			
-		
-		 case 3:{ans = false;
-		 
-		 
-			 break;
-			 
-		 }
+	case 3:{
+					ans = false;
+					break;
+			 		}break;
 
 		}
-	} 
+	}
 
-    auto game_end = chrono::system_clock::to_time_t(chrono::system_clock::now()); 
+    auto game_end = chrono::system_clock::to_time_t(chrono::system_clock::now());
 	system("clear");
 	cout << "\n\nGame Started at"<<ctime(&game_begin)<<endl;
 	cout << "Game Ended at"<<ctime(&game_end)<<endl;
@@ -123,8 +119,11 @@ int main(void){
 	cout << "Won = "<<won<<endl;
 	cout << "Lost = "<<lost<<endl;
 	cout << "";
-
-	file.open ("Pontoon_Log.txt");
+	
+	int random_number = rand()%10000000;
+	string filePath = "pontoon_";
+	filePath += std::to_string(random_number);
+	file.open (filePath+".txt");
 	file << "\n\nGame Started at"<<ctime(&game_begin)<<endl;
 	file << "Game Ended at"<<ctime(&game_end)<<endl;
 	file << "Rounds = "<<deal<<endl;
@@ -133,6 +132,5 @@ int main(void){
 	file << "";
 	file.close();
 	cout<<"Logs generated"<<endl;
-	
+	system("clear");
 }
-
